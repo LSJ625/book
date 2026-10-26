@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>新增图书</title>
+</head>
+<body>
+<h3>新增图书</h3>
+<form action="bookAdd" method="post">
+    书名：<input type="text" name="bookname"><br>
+    作者：<input type="text" name="author"><br>
+    借阅状态：
+    <select name="status">
+        <option value="0">可借阅</option>
+        <option value="1">已借出</option>
+    </select>
+    <br>
+    <input type="submit" value="提交新增">
+</form>
+<a href="/book/list">返回列表</a>
+</body>
+</html>
